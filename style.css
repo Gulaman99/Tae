@@ -1,0 +1,107 @@
+:root {
+
+  /* Primary */
+
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+
+  /* Neutral */
+
+  --Grey-500: hsl(234, 12%, 34%);
+  --Grey-400: hsl(212, 6%, 44%);
+  --White: hsl(0, 0%, 100%);
+  
+  /* font & weight */
+  
+  --poppins-font: "Poppins", sans-serif;
+  --font-weigth-200: 200;
+  --font-weigth-400: 400;
+  --font-weigth-600: 600;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--poppins-font);
+  color: var(--Grey-500);
+  font-weight: 15px;
+}
+
+.header h1 {
+  font-size: 1.69rem;
+  font-weight: var(--font-weigth-200);
+  text-align: center;
+  line-height: 1.3;
+  margin-top: 3.5rem;
+}
+
+.header .bold {
+  font-weight: var(--font-weigth-600);
+}
+
+.header-description {
+  text-align: center;
+  display: block;
+  max-width: 20rem;
+}
+
+.main-flex-wrap {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.middle-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.supervisor, .team-builder, .karma, .calculator {
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+  width: 280px;
+}
+
+.supervisor {
+  border-top: solid 4px var(--Blue);
+}
+
+.team-builder {
+  border-top: solid 4px var(--Blue);
+}
+
+.karma {
+  border-top: solid 4px var(--Orange);
+}
+
+.calculator {
+  border-top: solid 4px var(--Cyan);
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (min-width: 800px) {
+  .main-flex-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+  .supervisor, .team-builder, .karma, .calculator {
+  margin: 0 2rem 2rem 0;
+}
+}
